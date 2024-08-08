@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "type": "appInsights.sdk"
+    },
+    "storage1": {
+      "type": "storage.emulator",
+      "connectionId": "AzureWebJobsStorage"
+    },
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "storage2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/eastus/connectors/topicconnection_F38362F254",
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/functionpractstorage",
+      "type": "storage.azure",
+      "connectionId": "topicconnection",
+      "dynamicId": null
+    }
+  }
+}
